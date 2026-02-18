@@ -12,3 +12,5 @@ resource "aws_eip" "public_ip" {
   instance = aws_instance.linux-vm.id
   domain   = "vpc"
 }
+
+# terraform graph | dot -Tpng > graph.png
