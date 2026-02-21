@@ -1,17 +1,18 @@
 #!/bin/bash
+set -e
 
 # Update system
-apt update -y
+sudo apt update -y
 
 # Install nginx
-apt install nginx -y
+sudo apt install nginx -y
 
 # Start and enable nginx
-systemctl start nginx
-systemctl enable nginx
+sudo systemctl start nginx
+sudo systemctl enable nginx
 
 # Create a stylish HTML page
-cat <<EOF > /var/www/html/index.html
+sudo tee /var/www/html/index.html > /dev/null <<EOF
 <!DOCTYPE html>
 <html>
 <head>
