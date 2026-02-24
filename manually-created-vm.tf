@@ -24,11 +24,11 @@ resource "aws_instance" "vm" {
   placement_group_id                   = null
   placement_partition_number           = 0
   private_ip                           = "172.31.24.85"
-  region                               = "us-east-1"
+  region                               = "us-west-2"
   secondary_private_ips                = []
   security_groups                      = ["launch-wizard-1"]
   source_dest_check                    = true
-  subnet_id                            = "subnet-094632a9ef9dd1f3f"
+  subnet_id                            = "subnet-094632axxxf"
   tags = {
     Name = "Manual-vm-1"
   }
@@ -40,7 +40,7 @@ resource "aws_instance" "vm" {
   user_data_base64            = null
   user_data_replace_on_change = null
   volume_tags                 = null
-  vpc_security_group_ids      = ["sg-01322ed765f60c19f"]
+  vpc_security_group_ids      = ["sg-01322ed765xxx"]
   capacity_reservation_specification {
     capacity_reservation_preference = "open"
   }
